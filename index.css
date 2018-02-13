@@ -6,12 +6,25 @@ div{
   display: inline;
 
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body{
+  color: #6F84B6;
+  font-family: 'Roboto', sans-serif;
+}
 
 /* h1 {
   text-align: center;
 } */
 h1 {
+  /* text-align: center; */
   padding-left: 20px;
+  padding-top: 50px;
 }
 
 h2 {

@@ -42,7 +42,9 @@ function makeDiv(divName, parentNode, textStyle){
 function makeDivWithInput(divName, parentNode, textStyle, type){
   var div = document.createElement('div')
   div.setAttribute('id', `${divName}`)
+  div.setAttribute("class", "form-group")
   var style = document.createElement(`${textStyle}`)
+  style.setAttribute("class", "form-control")
   parentNode.appendChild(div)
   div.appendChild(style)
   style.innerText = `${divName}`
@@ -62,6 +64,7 @@ function makeDivWithInput(divName, parentNode, textStyle, type){
 function makeRadioButton(option, parentNode){
   var answer = document.createElement('input')
   answer.setAttribute('type', 'radio')
+  // answer.setAttribute("class", "form-control")
   answer.setAttribute("name", `${parentNode.parentElement.parentElement.id}RadioButton`)
   parentNode.appendChild(answer)
   //
@@ -70,6 +73,7 @@ function makeRadioButton(option, parentNode){
 function makeCheckBox(parentNode){
   var answer = document.createElement('input')
   answer.setAttribute('type', 'checkbox')
+  answer.setAttribute("class", "form-text text-muted")
   answer.setAttribute("name", `${parentNode.parentElement.id}Button`)
   parentNode.appendChild(answer)
 }
@@ -343,6 +347,7 @@ function makeSection(){
     dataSyncFrequencyQ1 = makeDivWithInput('How often do you want to sync your data',q19,'h4','text')
 
 var submit = document.createElement('input')
+submit.setAttribute("class", "center btn-lg btn-primary")
 document.body.appendChild(submit)
 submit.setAttribute('type', 'submit')
 submit.addEventListener("click", submitForm)
@@ -555,7 +560,7 @@ function submitForm(){
         "
     }`
   })
-// debugger
+
   // Integration call
   $.get({
     url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
