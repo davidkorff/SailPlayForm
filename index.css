@@ -12,9 +12,17 @@ div{
     margin-right: auto;
 }
 
+.form-control {
+  background-color: #d7dbe3 !important;
+  width: 96% !important;
+}
+
+.form-text {
+  display: -webkit-inline-box !important;
+}
 
 body{
-  color: #6F84B6;
+  background-color: #6F84B6 !important;
   font-family: 'Roboto', sans-serif;
 }
 

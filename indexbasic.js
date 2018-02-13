@@ -33,6 +33,7 @@ function makeDiv(divName, parentNode, textStyle){
   var div = document.createElement('div')
   div.setAttribute('id', `${divName}`)
   var style = document.createElement(`${textStyle}`)
+  style.setAttribute("class", "center")
   parentNode.appendChild(div)
   div.appendChild(style)
   style.innerText = `${divName}`
