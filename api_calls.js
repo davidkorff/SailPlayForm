@@ -2,7 +2,7 @@ function submitForm(){
   // profile variables call
   function allAnswersInOne(parentParentNode){
     var answer = ""
-    for (let i = parentParentNode.children[0].children.length; i>0 ; i--){
+    for (let i = parentParentNode.children[0].children.length-1; i>0 ; i--){
       var answer =  parentParentNode.children[0].children[i].value +', '+ answer
     }
     return answer
