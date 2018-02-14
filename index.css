@@ -6,6 +6,15 @@ div{
   display: inline;
 
 }
+
+.form-group{
+  display: block !important;
+}
+/* .btn-group-sm>.btn, .btn-sm{
+  border-radius: 5px !important;
+  width: 20px !important;
+  height: 20px !important;
+} */
 .center {
     display: block;
     margin-left: auto;
