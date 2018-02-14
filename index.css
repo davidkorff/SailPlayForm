@@ -6,15 +6,23 @@ div{
   display: inline;
 
 }
+.text {
+  display: block !important;
+  height: 25px;
+}
 
 .form-group{
   display: block !important;
+  width: 50%;
+  /* padding: 5px; */
+  margin-bottom: 0rem !important;
 }
-/* .btn-group-sm>.btn, .btn-sm{
-  border-radius: 5px !important;
-  width: 20px !important;
-  height: 20px !important;
-} */
+.btn-group-sm>.btn, .btn-sm{
+  padding: 3px 2px !important;
+  font-size: 0.875rem !important;
+  line-height: 0.5 !important;
+  border-radius: 20px !important;
+}
 .center {
     display: block;
     margin-left: auto;
@@ -23,7 +31,7 @@ div{
 
 .form-control {
   background-color: #d7dbe3 !important;
-  width: 96% !important;
+  width: 100% !important;
 }
 
 .form-text {
@@ -45,7 +53,7 @@ h1 {
 }
 
 h2 {
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 
 h3 {

@@ -17,10 +17,10 @@ function makeTextField(parentNode, bool){
   }
   var answer = document.createElement('input')
   answer.setAttribute('type', 'text')
-  answer.setAttribute('class', 'form-group')
+  answer.setAttribute('class', 'text')
   answer.setAttribute("id", `${parentNode.parentElement.id}Text`)
-  answer.style.width = '300px'
-  answer.style.height = '20px'
+  // answer.style.width = '80%'
+  // answer.style.height = '20px'
   answer.style.wordWrap = "break-word"
   parentNode.appendChild(answer)
   return answer

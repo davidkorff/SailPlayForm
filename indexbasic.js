@@ -45,7 +45,7 @@ function makeSection(){
        userProfileInfoPhone = makeDivWithInput('Phone', userProfileInfo, 'h5', 'checkBox')
        userProfileStatus = makeDivWithInput('Display Status Level', userProfileInfo, 'h5', 'checkBox')
        userProfileImage = makeDivWithInput('Display Image', userProfileInfo, 'h5', 'checkBox')
-       userProfileInfoCustom = makeDivWithInput('Custom', userProfileInfo, 'h5', 'text')
+       userProfileInfoCustom = makeDivWithInput('Custom', userProfileInfo, 'h5', 'text', true)
 
    q5 = makeDiv('Gifts', document.body, 'h1')
     giftsQ1 = makeDivWithInput('What Gifts would you like to offer?', q5, 'h4', 'text', true)
