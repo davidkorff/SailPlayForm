@@ -9,6 +9,7 @@ div{
 .text {
   display: block !important;
   height: 25px;
+  width: 80%;
 }
 
 .form-group{
