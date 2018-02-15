@@ -23,7 +23,15 @@ function submitForm(){
         Email: ${email.children[0].children[0].checked}"
     }`,
     success: function (data) {
-        console.log("1. Included in Profile "+data.status)
+        console.log(`1. Included in Profile -
+        First Name: ${firstName.children[0].children[0].checked},
+        Middle Name: ${middleName.children[0].children[0].checked},
+        Last Name: ${lastName.children[0].children[0].checked},
+        Birthdate: ${birthDate.children[0].children[0].checked},
+        Gender: ${gender.children[0].children[0].checked},
+        Loyalty Number: ${loyaltyNumberYes.children[0].children[0].checked},
+        Phone: ${phone.children[0].children[0].checked},
+        Email: ${email.children[0].children[0].checked} `+data.status)
       },
       async: false,
   })
@@ -37,13 +45,15 @@ function submitForm(){
         Login With Email: ${identifierEmail.children[0].children[0].checked}"
     }`,
     success: function (data) {
-        console.log("2. Login "+data.status)
+        console.log(`2. Login -
+        Login with Phone: ${identifierPhone.children[0].children[0].checked},
+        Login With Email: ${identifierEmail.children[0].children[0].checked} `+data.status)
       },
       async: false,
   })
 
   // status system call
-    $.get({
+  $.get({
       url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
       {
         "Status System?":
@@ -56,11 +66,20 @@ function submitForm(){
           Status System Reset?:${statusSystem3q.children[0].children[0].checked},
           How Many Levels?:${statusSystem4q.children[0].children[0].value},
           What are the level's names?: ${statusSystem5q.children[0].children[0].value},
-          What are thee rules to get to each level?: ${statusSystem6q.children[0].children[0].value},
+          What are thee rules to get to each level?: ${statusSystem6q.children[0].children[0].value}
           "
       }`,
       success: function (data) {
-          console.log("3. status system "+data.status)
+          console.log(`3. Status System -
+          Using a status system?: ${statusSystem1q.children[0].children[0].checked},
+          Status System based on?-
+            Points: ${statusSystem2aPoints.children[0].children[0].checked},
+            Money Spent: ${statusSystem2aMoney.children[0].children[0].checked},
+            Other: ${statusSystem2aOther.children[0].children[0].checked},
+          Status System Reset?:${statusSystem3q.children[0].children[0].checked},
+          How Many Levels?:${statusSystem4q.children[0].children[0].value},
+          What are the level's names?: ${statusSystem5q.children[0].children[0].value},
+          What are thee rules to get to each level?: ${statusSystem6q.children[0].children[0].value} `+data.status)
         },
         async: false,
       })
@@ -99,12 +118,24 @@ function submitForm(){
         Phone: ${userProfileInfoPhone.children[0].children[0].checked},
         Display Status Level: ${userProfileStatus.children[0].children[0].checked},
         Display Image: ${userProfileImage.children[0].children[0].checked},
-        Custom: ${userProfileInfoCustom.children[0].children[0].value},
+        Custom: ${userProfileInfoCustom.children[0].children[0].value}
         "
     }`,
     async: false,
     success: function (data) {
-        console.log("3.5. user details "+data.status)
+        console.log(`3.5. User details on page -
+        Points Counter: ${pointsCounter.children[0].children[0].checked},
+        Money Spent Counter: ${moneySpentCounter.children[0].children[0].checked},
+        First Name: ${userProfileInfoFirstName.children[0].children[0].checked},
+        Last Name: ${userProfileInfoLastName.children[0].children[0].checked},
+        Middle Name: ${userProfileInfoMiddleName.children[0].children[0].checked},
+        BirthDay: ${userProfileInfoBirthday.children[0].children[0].checked},
+        Gender: ${userProfileInfoGender.children[0].children[0].checked},
+        Email: ${userProfileInfoEmail.children[0].children[0].checked},
+        Phone: ${userProfileInfoPhone.children[0].children[0].checked},
+        Display Status Level: ${userProfileStatus.children[0].children[0].checked},
+        Display Image: ${userProfileImage.children[0].children[0].checked},
+        Custom: ${userProfileInfoCustom.children[0].children[0].value} `+data.status)
       },
 
   })
@@ -125,7 +156,12 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("4. gifts "+data.status)
+        console.log(`4. Gifts -
+        What gifts?: ${allGifts}
+        SailPlay Delivers Promo Codes?: ${spDeliversPromoCodes.children[0].children[0].checked},
+        Gifts pushed to Online Cart?: ${pushGiftsToOnlineCart.children[0].children[0].checked},
+        Award gifts In Store?: ${pushGiftsToOnlineCart.children[0].children[0].checked},
+        Send Email to manager to awar gift: ${sendEmailToManager.children[0].children[0].checked} `+data.status)
       },
       async: false,
   })
@@ -145,7 +181,11 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("5. badges"+data.status)
+        console.log(`5. Badges -
+        Include badges?: ${badgesQ1.children[0].children[0].checked},
+        What Badges?: ${allBadges}
+        Badge rules?: ${allBadgeRules}
+        Product Based Badges?: ${badgesQ4.children[0].children[0].checked} `+data.status)
       },
       async: false,
   })
@@ -153,7 +193,6 @@ function submitForm(){
 
   // Actions call
   var allCustomActions = allAnswersInOne(otherActions5)
-
   $.get({
       url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
       {
@@ -175,7 +214,20 @@ function submitForm(){
           "
       }`,
       success: function (data) {
-          console.log("6. actions "+data.status)
+          console.log(`6. Actions -
+          Include Actions?: ${actionsQ1.children[0].children[0].checked},
+          FB Group: ${facebookAction1.children[0].children[0].checked},
+          Post on FB: ${facebookAction2.children[0].children[0].checked},
+          Purchase on FB: ${facebookAction3.children[0].children[0].checked},
+          Follow Twitter: ${twitterAction1.children[0].children[0].checked},
+          Share Purchase on Twitter: ${twitterAction2.children[0].children[0].checked},
+          Join G+ group: ${googleAction1.children[0].children[0].checked},
+          Share Purchase on G+: ${googleAction2.children[0].children[0].checked},
+          Survey: ${otherActions1.children[0].children[0].checked},
+          Invite a friend: ${otherActions2.children[0].children[0].checked},
+          Watch Youtube: ${otherActions3.children[0].children[0].checked},
+          Page Redirect: ${otherActions4.children[0].children[0].checked},
+          Custom: ${allCustomActions} `+data.status)
         },
         async: false,
     })
@@ -189,7 +241,7 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("7. leaderboard "+data.status)
+        console.log(`7. Leaderboard - ${leaderboardQ1.children[0].children[0].checked} `+data.status)
       },
       async: false,
   })
@@ -214,7 +266,18 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("8. desktop app "+data.status)
+        console.log(`8. Desktop App -
+        Using a Desktop app?: ${desktopAppQ1.children[0].children[0].checked},
+        Promo code validation: ${desktopAppFeatures1.children[0].children[0].checked},
+        Merge users: ${desktopAppFeatures2.children[0].children[0].checked},
+        Award gifts: ${desktopAppFeatures3.children[0].children[0].checked},
+        See past purchases: ${desktopAppFeatures4.children[0].children[0].checked},
+        See favorite Purchases: ${desktopAppFeatures5.children[0].children[0].checked}
+        Add / Subtract Points: ${desktopAppFeatures6.children[0].children[0].checked}
+        Add tags to users: ${desktopAppFeatures7.children[0].children[0].checked}
+        Create User: ${desktopAppFeatures8.children[0].children[0].checked}
+        Mac?: ${desktopAppPlatform1.children[0].children[0].checked}
+        PC?: ${desktopAppPlatform2.children[0].children[0].checked} `+data.status)
       },
       async: false,
   })
@@ -229,7 +292,7 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("9. integrations "+data.status)
+        console.log(`9. Integration - ${allIntegrations} `+data.status)
       },
       async: false,
   })
@@ -245,7 +308,7 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("10. trigger campaigns "+data.status)
+        console.log(`10. Trigger Campaings - ${allTriggers} `+data.status)
       },
       async: false,
   })
@@ -260,7 +323,7 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("11. promo campaigns "+data.status)
+        console.log(`11. Promo Campaigns - ${allPromos} `+data.status)
       },
       async: false,
   })
@@ -274,7 +337,7 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("12. email templates "+data.status)
+        console.log(`12. Email Templates - ${emailTemplatesQ1.children[0].children[0].checked} `+data.status)
       },
       async: false,
   })
@@ -288,7 +351,7 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("13. design assets "+data.status)
+        console.log(`13. Design Assets - ${designAssetsQ1.children[0].children[0].checked} `+data.status)
       },
       async: false,
   })
@@ -302,7 +365,7 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("14. DNS "+data.status)
+        console.log(`14. DNS Records - ${dnsRecordsQ1.children[0].children[0].value} `+data.status)
       },
       async: false,
   })
@@ -318,7 +381,7 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("15. analytics "+data.status)
+        console.log(`15. Analytics - ${allAnalytics} `+data.status)
       },
       async: false,
   })
@@ -332,7 +395,7 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("16. promo codes "+data.status)
+        console.log(`16. Promo Codes - ${promoCodesQ1.children[0].children[0].checked} `+data.status)
       },
       async: false,
   })
@@ -346,7 +409,7 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("17. certificates "+data.status)
+        console.log(`17. Certificates - ${certificatesQ1.children[0].children[0].checked} `+data.status)
       },
       async: false,
   })
@@ -360,7 +423,7 @@ function submitForm(){
         "
     }`,
     success: function (data) {
-        console.log("18. data sync freq "+data.status)
+        console.log(`18. Data Synce Frequency - ${dataSyncFrequencyQ1.children[0].children[0].value} `+data.status)
       },
       async: false,
   })
