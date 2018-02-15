@@ -10,6 +10,7 @@ function makeCircle(parentNode){
   // parentNode.appendChild(circle)
 }
 
+
 function makeTextField(parentNode, bool){
   if (bool==true){
     // debugger
@@ -26,23 +27,25 @@ function makeTextField(parentNode, bool){
   return answer
 }
 
-function makeDiv(divName, parentNode, textStyle){
+function makeDiv(divName, parentNode, textStyle, classStyle){
   var div = document.createElement('div')
   div.setAttribute('id', `${divName}`)
   var style = document.createElement(`${textStyle}`)
-  style.setAttribute("class", "center")
+  style.setAttribute("class", `${classStyle}`)
   parentNode.appendChild(div)
   div.appendChild(style)
   style.innerText = `${divName}`
   return div
 }
 
-function makeDivWithInput(divName, parentNode, textStyle, type, bool){
+function makeDivWithInput(divName, parentNode, textStyle, type, bool, className){
   var div = document.createElement('div')
   div.setAttribute('id', `${divName}`)
   div.setAttribute("class", "form-group")
   var style = document.createElement(`${textStyle}`)
-  style.setAttribute("class", "form-control")
+  // style.setAttribute("class", "form-control")
+
+  style.setAttribute("class", `${className}`)
   parentNode.appendChild(div)
   div.appendChild(style)
   style.innerText = `${divName}`

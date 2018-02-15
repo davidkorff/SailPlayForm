@@ -1,4 +1,9 @@
-function declareVariables(){
+// function declareVariables(){
+one = document.createElement('div')
+two = document.createElement('div')
+one.appendChild(two)
+
+
   var q1, systemVariables, firstName, systemVariables, middleName, lastName, taggedVariables, birthDate, gender, uniqueIdentifier, loyaltyNumberYes, phone, email, identifier, identifierPhone, identifierEmail
 
   var q2, statusSystem1q, statusSystem2q, statusSystem2aPoints, statusSystem2aMoney, statusSystem2aOther, statusSystem3q, statusSystem4q, statusSystem5q, statusSystem6q
@@ -36,4 +41,4 @@ function declareVariables(){
   var q18, certificatesQ1
 
   var q19, dataSyncFrequencyQ1
-}
+// }
