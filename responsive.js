@@ -40,3 +40,22 @@ function makeDisplayDifferent(styleClass, nodeArray){
   }
 
 }
+
+function ValidateEmail(mail)
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+
+// profile variables call
+function allAnswersInOne(parentParentNode){
+  var answer = ""
+  for (let i = parentParentNode.children[0].children.length-1; i>0 ; i--){
+    var answer =  parentParentNode.children[0].children[i].value +', '+ answer
+  }
+  return answer
+}
