@@ -9,7 +9,7 @@ function submitForm(){
   }
 //included in profile
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Included in Profile":
         "Included in Profile -
@@ -87,7 +87,7 @@ function submitForm(){
 
   //Progress Bar call.
   // $.get({
-  //   url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+  //   url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
   //   {
   //     "Progress Bar":
   //       "Progress Bar -
@@ -103,7 +103,7 @@ function submitForm(){
 
   // User details on page call
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "User details on page":
         "User details on page -
@@ -144,7 +144,7 @@ function submitForm(){
   var allGifts = allAnswersInOne(giftsQ1)
   // debugger
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Gifts":
         "Gifts -
@@ -170,7 +170,7 @@ function submitForm(){
   var allBadges = allAnswersInOne(badgesQ2)
   var allBadgeRules = allAnswersInOne(badgesQ3)
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Badges":
         "Badges -
@@ -194,7 +194,7 @@ function submitForm(){
   // Actions call
   var allCustomActions = allAnswersInOne(otherActions5)
   $.get({
-      url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+      url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
       {
         "Actions":
           "Actions -
@@ -234,7 +234,7 @@ function submitForm(){
 
   // Leaderboard call
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Leaderboard":
         "Leaderboard - ${leaderboardQ1.children[0].children[0].checked}
@@ -248,7 +248,7 @@ function submitForm(){
 
   // Desktop App call
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Desktop App":
         "Desktop App -
@@ -285,7 +285,7 @@ function submitForm(){
   // Integration call
   var allIntegrations = allAnswersInOne(integrationQ1)
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Integration":
         "Integration - ${allIntegrations}
@@ -301,7 +301,7 @@ function submitForm(){
   var allTriggers = allAnswersInOne(triggersQ1)
 
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Trigger Campaings":
         "Trigger Campaings - ${allTriggers}
@@ -316,7 +316,7 @@ function submitForm(){
   // Promo Campaigns call
   var allPromos = allAnswersInOne(promoCampaignsQ1)
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Promo Campaigns":
         "Promo Campaigns - ${allPromos}
@@ -330,7 +330,7 @@ function submitForm(){
 
   // Email Templates call
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Email Templates":
         "Email Templates - ${emailTemplatesQ1.children[0].children[0].checked}
@@ -344,7 +344,7 @@ function submitForm(){
 
   // Design Assets call
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Design Assets":
         "Design Assets - ${designAssetsQ1.children[0].children[0].checked}
@@ -358,7 +358,7 @@ function submitForm(){
 
   // DNS Records call
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "DNS Records":
         "DNS Records - ${dnsRecordsQ1.children[0].children[0].value}
@@ -374,7 +374,7 @@ function submitForm(){
   var allAnalytics = allAnswersInOne(analyticsQ1)
 
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Analytics":
         "Analytics - ${allAnalytics}
@@ -388,7 +388,7 @@ function submitForm(){
 
   // Promo Codes call
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Promo Codes":
         "Promo Codes - ${promoCodesQ1.children[0].children[0].checked}
@@ -402,7 +402,7 @@ function submitForm(){
 
   // Certificates call
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Certificates":
         "Certificates - ${certificatesQ1.children[0].children[0].checked}
@@ -416,7 +416,7 @@ function submitForm(){
 
   // Data Synce Frequency call
   $.get({
-    url:`http://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
+    url:`https://sailplay.net/api/v2/users/custom-vars/add/?email=test1@test.com&token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&vars=
     {
       "Data Synce Frequency":
         "Data Synce Frequency - ${dataSyncFrequencyQ1.children[0].children[0].value}
