@@ -95,7 +95,7 @@ function makeSection(){
 
    q7 = makeDiv('Actions', document.body, 'h1')
 
-      actionsQ1 = makeDivWithInput('Would you like to include Actions?',q7,'h2','checkBox')
+      actionsQ1 = makeDivWithInput('Would you like to include Actions?',q7,'h2','checkBox', false, 'form-control')
        includedActions1 = makeDiv('Social Media Options', actionsQ1, 'h3')
          socialMediaActions1 = makeDivWithInput('Facebook', includedActions1, 'h4', 'checkBox', false, 'form-control')
            facebookAction1 = makeDivWithInput('Join a group', socialMediaActions1, 'h5', 'checkBox', false, 'form-control')
@@ -120,7 +120,7 @@ function makeSection(){
 
    q9 = makeDiv('Desktop App', document.body, 'h1')
      desktopAppQ1 = makeDivWithInput('Will you require a desktop app?', q9, 'h4', 'checkBox', false, 'form-control')
-     desktopAppQ2 = makeDiv('What features will you require the desktop app to have?', desktopAppQ1, 'h5', 'text')
+     desktopAppQ2 = makeDiv('What features will you require the desktop app to have?', desktopAppQ1, 'h5')
      desktopAppFeatures1 = makeDivWithInput('Promo code validation', desktopAppQ2, 'h6', 'checkBox', false, 'form-control')
      desktopAppFeatures2 = makeDivWithInput('Merge user accounts', desktopAppQ2, 'h6', 'checkBox', false, 'form-control')
      desktopAppFeatures3 = makeDivWithInput('Award gifts', desktopAppQ2, 'h6', 'checkBox', false, 'form-control')
@@ -129,7 +129,7 @@ function makeSection(){
      desktopAppFeatures6 = makeDivWithInput('add/ subtract points', desktopAppQ2, 'h6', 'checkBox', false, 'form-control')
      desktopAppFeatures7 = makeDivWithInput('Add tags to user', desktopAppQ2, 'h6', 'checkBox', false, 'form-control')
      desktopAppFeatures8 = makeDivWithInput('Create user', desktopAppQ2, 'h6', 'checkBox', false, 'form-control')
-     desktopAppQ3 = makeDiv('What platform will you be utlizing the app on?', desktopAppQ1, 'h5', 'text')
+     desktopAppQ3 = makeDiv('What platform will you be utlizing the app on?', desktopAppQ1, 'h5')
      desktopAppPlatform1 = makeDivWithInput('Mac', desktopAppQ3, 'h6', 'checkBox', false, 'form-control')
      desktopAppPlatform2 = makeDivWithInput("PC (excluding Window's Vista)", desktopAppQ3, 'h6', 'checkBox', false, 'form-control')
 
