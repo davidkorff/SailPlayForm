@@ -19,17 +19,17 @@ function signUpUniqueIdentifier(){
 }
 
 
-function progressBarOptions(){
-  if (document.getElementsByName("Progress BarButton")[0].checked == true){
-     progressBarGiftsBar = makeDivWithInput('Gifts Bar', progressBar, 'h5', 'radioButton')
-     if (document.getElementsByName("Will you be using a Status System?Button")[0].checked == false){
-       document.getElementsByName("Progress BarRadioButton")[0].checked = true
-     }
-  }
-  else {
-    progressBarGiftsBar.remove()
-  }
-}
+// function progressBarOptions(){
+//   if (document.getElementsByName("Progress BarButton")[0].checked == true){
+//      progressBarGiftsBar = makeDivWithInput('Gifts Bar', progressBar, 'h5', 'radioButton')
+//      if (document.getElementsByName("Will you be using a Status System?Button")[0].checked == false){
+//        document.getElementsByName("Progress BarRadioButton")[0].checked = true
+//      }
+//   }
+//   else {
+//     progressBarGiftsBar.remove()
+//   }
+// }
 
 
 

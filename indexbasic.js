@@ -4,6 +4,10 @@ window.onload=makeSection()
 function makeSection(){
 
   // declareVariables()
+    userInfo = makeDiv('Your Information', document.body, 'h1')
+      userInfoFirstName = makeDivWithInput('Full Name',userInfo, 'h2','text', false, 'form-control')
+      userInfoEmail = makeDivWithInput('Email',userInfo,'h2','text', false, 'form-control')
+      userInfoPhone = makeDivWithInput('Phone',userInfo,'h2','text', false, 'form-control')
 
    q1 = makeDiv('What data would you like to collect upon sign up?', document.body, 'h1')
      systemVariables = makeDiv('System Variables', q1, 'h2')
@@ -17,7 +21,7 @@ function makeSection(){
        loyaltyNumberYes = makeDivWithInput('Loyalty Number', uniqueIdentifier, 'h5', 'checkBox', false, 'form-control')
        phone = makeDivWithInput('Phone', uniqueIdentifier, 'h5', 'checkBox', false, 'form-control')
        email = makeDivWithInput('Email', uniqueIdentifier, 'h5', 'checkBox', false, 'form-control')
-      Phone.addEventListener("click", uniqueIdentifierSignUp)
+      phone.addEventListener("click", uniqueIdentifierSignUp)
       identifier = makeDiv('Sign in/up Identifier', uniqueIdentifier, 'h2')
       identifierPhone = makeDivWithInput('Phone', identifier, 'h5', 'radioButton', false, 'form-control')
       identifierEmail = makeDivWithInput('Email', identifier, 'h5', 'radioButton', false, 'form-control')
