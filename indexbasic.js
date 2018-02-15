@@ -58,11 +58,11 @@ function makeSection(){
     })
        // makeDisplayDifferent('none',[statusSystem2q,statusSystem2aPoints,statusSystem2aMoney,statusSystem2aOther,statusSystem3q,statusSystem4q,statusSystem5q,statusSystem6q])
 
-   q3 = makeDiv('Please define your Progress Bar', document.body, 'h1')
-    progressBar = makeDivWithInput('Progress Bar', q3, 'h3', 'checkBox', false, 'form-control')
-    progressBarStatusBar = makeDivWithInput('Status Bar', progressBar, 'h5', 'radioButton', false, 'form-control')
-    // makeDisplayDifferent('none',[progressBarStatusBar])
-    document.getElementsByName("Progress BarButton")[0].addEventListener('click', progressBarOptions)
+   // q3 = makeDiv('Please define your Progress Bar', document.body, 'h1')
+   //  progressBar = makeDivWithInput('Progress Bar', q3, 'h3', 'checkBox', false, 'form-control')
+   //  progressBarStatusBar = makeDivWithInput('Status Bar', progressBar, 'h5', 'radioButton', false, 'form-control')
+   //  // makeDisplayDifferent('none',[progressBarStatusBar])
+   //  document.getElementsByName("Progress BarButton")[0].addEventListener('click', progressBarOptions)
 
    q4 = makeDiv('User Details Displayed on Page', document.body, 'h1')
      pointsCounter = makeDivWithInput('Points Counter', q4, 'h3', 'checkBox', false, 'form-control')
