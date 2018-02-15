@@ -5,8 +5,9 @@ function makeSection(){
 
   // declareVariables()
     userInfo = makeDiv('Your Information', document.body, 'h1')
-      userInfoFirstName = makeDivWithInput('Full Name',userInfo, 'h2','text', false, 'form-control')
+      userInfoFullName = makeDivWithInput('Full Name',userInfo, 'h2','text', false, 'form-control')
       userInfoEmail = makeDivWithInput('Email',userInfo,'h2','text', false, 'form-control')
+      // userInfoEmail.setAttribute('type', 'email')
       userInfoPhone = makeDivWithInput('Phone',userInfo,'h2','text', false, 'form-control')
 
    q1 = makeDiv('What data would you like to collect upon sign up?', document.body, 'h1')

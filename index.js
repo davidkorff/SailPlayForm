@@ -11,25 +11,8 @@ function createForm(){
     {'Loyalty Number':'radio', options: ['Yes', 'No']},
     {'Phone':'radio', options: ['Yes', 'No']},
     {'Email':'radio', options: ['Yes', 'No']},
-    {'Sign in/up identifier':'radio', options: ['Phone', 'Email']}    
+    {'Sign in/up identifier':'radio', options: ['Phone', 'Email']}
   ])
-  // createSection('Status System')
-  // createSection('Progress Bar')
-  // createSection('User Details')
-  // createSection('Gifts')
-  // createSection('Badges')
-  // createSection('Actions')
-  // createSection('Leaderboard')
-  // createSection('Integrtion')
-  // createSection('Platform')
-  // createSection('Triggers')
-  // createSection('PromoCampaigns')
-  // createSection('Email Templates')
-  // createSection('DNS Records')
-  // createSection('Analytics')
-  // createSection('PromoCodes')
-  // createSection('Certificates')
-  // createSection('Data Sync Frequency')
 }
 
 function createSection(sectionName, objectArray){
@@ -70,7 +53,7 @@ function createFormField(section, inputName, objectArray){
   div.innerHTML = inputName
   if(questionType = "radio"){
     makeRadioButtons(inputName, questionOptions)
-  }  
+  }
   
   function makeRadioButtons(inputName, questionOptions){
     for(let i = 0; i<questionOptions.length; i++){
@@ -99,6 +82,3 @@ function createFormField(section, inputName, objectArray){
       console.log(document.getElementsByTagName('input')[i].value)
     }
   }
-
-
-

@@ -59,6 +59,16 @@ function makeDivWithInput(divName, parentNode, textStyle, type, bool, className)
   if (type == 'radioButton'){
     makeRadioButton(divName, style)
   }
+  if (type == 'email'){
+    var answer = document.createElement('input')
+    answer.setAttribute('type', 'email')
+    answer.setAttribute('class', 'email')
+    answer.setAttribute("id", `${parentNode.parentElement.id}Email`)
+    // answer.style.width = '80%'
+    // answer.style.height = '20px'
+    answer.style.wordWrap = "break-word"
+    parentNode.appendChild(answer)
+  }
   return div
 }
 
