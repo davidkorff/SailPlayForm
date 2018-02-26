@@ -436,12 +436,13 @@ function submitForm(){
 
       // add form submit tag
       $.ajax({
-        url:`https://sailplay.net/js-api/1834/tags/add/?tags=Form Submitted&auth_hash=&email=${userInfoEmail.children[0].children[0].value}&callback=1`,
+        url:`https://sailplay.net/js-api/1834/tags/add/?tags=Form Submitted&auth_hash=&email=${userInfoEmail.children[0].children[0].value}`,
         async: false,
         success: function (data) {
             console.log("19. tag added "+data.status)
-            location.reload()
           }
       })
+      // location.reload()
+
     }
 }
