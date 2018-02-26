@@ -1,14 +1,10 @@
 function submitForm(){
   if (ValidateEmail(userInfoEmail.children[0].children[0].value)==true){
-    //Customer info
+    //Customer info         &first_name=${userInfoFullName.children[0].children[0].value}
+
     $.get({
-      url:`https://sailplay.net/api/v2/users/add/?
-        email=${userInfoEmail.children[0].children[0].value}&
-        first_name=${userInfoFullName.children[0].children[0].value}
-        &token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898
-        &extra_fields=auth_hash`,
+      url:`https://sailplay.net/api/v2/users/add/?token=fb6385e28aa6d6f7f84dd4624d475b609cf5c574&store_department_id=8898&email=${userInfoEmail.children[0].children[0].value}&first_name=${userInfoFullName.children[0].children[0].value}&user_phone=${userInfoPhone.children[0].children[0].value}&extra_fields=auth_hash`,
       success: function (data) {
-        debugger
           console.log(`0. Client Info -
             email=${userInfoEmail.children[0].children[0].value}
             phone=${userInfoPhone.children[0].children[0].value}
