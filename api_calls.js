@@ -439,8 +439,8 @@ function submitForm(){
         url:`https://sailplay.net/js-api/1834/tags/add/?tags=Form Submitted&auth_hash=&email=${userInfoEmail.children[0].children[0].value}&callback=1`,
         async: false,
         success: function (data) {
-          debugger
             console.log("19. tag added "+data.status)
+            location.reload()
           }
       })
     }
